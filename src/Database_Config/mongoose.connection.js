@@ -7,10 +7,7 @@ const URL="mongodb+srv://haren111990:xTXeAucO6DlpMdZH@postway.1bfqp.mongodb.net/
 console.log(URL);
 const MongoDbConnection= async()=>{
     try{
-        await mongoose.connect(URL,{
-            useNewUrlParser:true,
-            useUnifiedTopology:true,
-        });
+        await mongoose.connect(URL);
         console.log("Connected to MongoDB succesfully....");
     }
     catch(err){
