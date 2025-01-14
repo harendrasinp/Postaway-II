@@ -1,7 +1,7 @@
 
 import { ApplicationError, customeErrorhandleMiddlware } from "../middlewares/ErrorHandling.js";
 import { signupRepository } from "./user.repository.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 export class userController {
