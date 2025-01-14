@@ -18,6 +18,9 @@ server.use("/api/comment",commentRouter);
 server.use("/api/likes",likeRouter);
 server.use("/api/friendship",friendshipRouter);
 
+server.get("/",(req,res)=>{
+    res.send("Welcome to node server..............")
+})
 
 
 
